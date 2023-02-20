@@ -1,0 +1,9 @@
+<h1>EDIT</h1>
+
+<form action="/characters/<%=character.id%>/edit-character/" method="POST">
+    <label>Name:<input type="text" name="name" value="<%=character.name%>"/></label>
+    <label>Occupation:<input type="text" name="occupation" value="<%=character.occupation%>"/></label>
+    <label>Weapon:<input type="text" name="weapon" value="<%=character.weapon%>"/></label>
+    <label>Debt:<input type="text" name="debt" value="<%=character.debt%>"/></label>
+    <button type="submit">Create</button>
+</form>

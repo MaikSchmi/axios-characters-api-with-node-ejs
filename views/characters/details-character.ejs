@@ -3,3 +3,11 @@
 <h3>Occupation: <%= character.occupation %></h3>
 
 <p>Weapon: <%= character.weapon %></p>
+<%console.log(character)%>
+
+<form action="/characters/<%=character.id%>/edit-character/" method="GET">
+    <button type="submit">Edit Character</button>
+</form>
+<form action="/characters/<%=character.id%>/delete/" method="POST">
+    <button type="submit">Delete Character</button>
+</form>
